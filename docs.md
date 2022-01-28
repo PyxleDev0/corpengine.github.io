@@ -1,4 +1,5 @@
-Welcome to the documentation of the CORP Engine!
+# Docs
+### Welcome to the documentation of the CORP Engine!
 
-# Pages
+## Pages
 * [GameObjects](./docs/objects.html)
