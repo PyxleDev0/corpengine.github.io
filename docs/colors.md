@@ -4,6 +4,7 @@
 | Table of Contents | 
 | ----------- |
 | [1.1 - List of Colors](#colors-list) |
+| [1.2 - Color Functions](#color-functions) |
 
 
 
@@ -13,39 +14,41 @@
 <span id="colors-list"></span>
 ## 1.1 - List of Colors
 ### Black - White Tones
-        white
-        corpwhite
-        lightgray
-        silver
-        gray
-        darkgray
-        black
+        WHITE
+        CORPWHITE
+        LIGHTGRAY
+        SILVER
+        GRAY
+        DARKGRAY
+        BLACK
 ### Single Colors (Single Tone)
-        red
-        lime
-        blue
+        RED
+        LIME
+        BLUE
 
 ### Single Colors (Toned)
-        darkgreen
-        darkred
-        green
+        DARKGREEN
+        DARKRED
+        GREEN
 
 ### Double Colors (Single Tone)
-        magenta
-        aqua
-        yellow
+        MAGENTA
+        AQUA
+        YELLOW
 
 ### Double Colors (Toned)
-        lightblue
-        orange
+        LIGHTBLUE
+        ORANGE
 
 ### Triple Colors (Toned)
-        pink
-        violet
-        brown
-        tan
-        forestgreen
-        babyblue
+        PINK
+        VIOLET
+        BROWN
+        TAN
+        FORESTGREEN
+        BABYBLUE
+
+<span id="color-functions"></span>
 ## 1.2 - Color Functions
 There are a few useful functions in CORP that let you work with tuples representing colors. The current functions are `mix`,`onlyEmpty`,`onlyFill` and `all`.
 See usage below.
