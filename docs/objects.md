@@ -48,5 +48,30 @@ Methods:
    - Giving the parent parameter is optional. On default, It checks for every child in Workspace. If you give another Object, it checks for every child of the Object.
 > Currently (v1.2), checking for collision at Entities inside Entities is not possible.
 
+A simple example for an Entity Object:
+
+```python
+import corpengine1 as corp  # import the engine
+
+engine = corp.init()  # initalize
+
+class MyEntity(corp.Entity):
+   def setup(self):
+      # this is a setup event. It gets called when the Object is ready to be in the game.
+      # You can set up the attributes of your Object here!
+      print("setup event")
+   
+   def update(self, deltaTime):
+      # this is an update event. It gets called every frame.
+      # use the deltaTime parameter to make value changing fair for all framerates.
+      print("update event")
+
+objectService = engine.game.getService("Object")  # get the Object Service
+workspace = engine.game.getService("Workspace")  # get the Workspace Service
+objectService.new(MyEntity(workspace))  # add the Object to the tree using the Object Service
+
+engine.mainloop()  # mainloop
+```
+
 ---
 Written January 29, 2022 by PyxleDev0
