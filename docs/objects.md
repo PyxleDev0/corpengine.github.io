@@ -44,6 +44,9 @@ Attributes:
 
 Methods:
 1. isColliding(objName, parent='Workspace')
+   - Returns if the given Entity with the name is currently colliding with the Entity.
+   - Giving the parent parameter is optional. On default, It checks for every child in Workspace. If you give another Object, it checks for every child of the Object.
+> Currently (v1.2), checking for collision at Entities inside Entities is not possible.
 
 ---
 Written January 29, 2022 by PyxleDev0
