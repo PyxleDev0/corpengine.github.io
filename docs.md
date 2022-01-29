@@ -3,3 +3,4 @@
 
 ## Pages
 * [GameObjects](./docs/objects.html)
+* [Colors](./docs/colors.html)
