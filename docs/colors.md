@@ -1,5 +1,5 @@
 
-# CORP Colors
+# CORP Engine Colors
 
 
 * Colors in CORP are constants in the `main.Colors` module, thus you can access each color with `corpengine1.Colors.{COLOR}.`
