@@ -1,13 +1,35 @@
 # Objects Documentation
 
-* Objects are used in classes. They are used in services & object types.
+| Table of Contents | 
+| ----------- |
+| [1.1 - Object Types](#object-types) |
 
-All GameObjects have this attributes:
+* Objects are what creates the whole service & parent-children system. Every Service & Object type is an Object.
+
+All Objects have this attributes:
 1. name (the string used to access objects by the user)
 2. type (engine use only, don't change this!)
 3. parent (the parent object)
+4. children & childrenQueue
+> Objects like Camera, SoundService, UserInputService, EngineEventService, EngineRenderService, Assets, Object do not have children.
+***
 
-## Object Types
-- There are some built-in object types that you can use to make a player, draw text, create particles and more.
+<span id="object-types"></span>
+## 1.1 - Object Types
+- There is some object types you can use during your development.
 
-### Content
+| Object Types |
+| ----------- |
+| [1.1.1 - Entity](#entity) |
+
+<span id="entity"></span>
+### 1.1.1 - Entity
+* Entity Object type is mainly used for visually shown alive Objects. They have their position, image, rotation and more.
+
+Attributes:
+1. image (A Pygame Surface, get an image from Assets Service)
+2. position (A list containing x and y positions of the Entity)
+3. render (A boolean deciding if the Entity should be rendered or not)
+4. collisionGroup (An integer deciding which collision group the Entity is in)
+5. size (The scaling values list containing x and y scale)
+6. rotation (A number deciding which side Entity is facing)
