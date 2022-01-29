@@ -11,7 +11,15 @@ All Objects have this attributes:
 2. type (engine use only, don't change this!)
 3. parent (the parent object)
 4. children & childrenQueue
-> Objects like Camera, SoundService, UserInputService, EngineEventService, EngineRenderService, Assets, Object do not have children.
+
+All Objects have this methods:
+1. getGameService() (Returns the GameService)
+2. getEngine() (Returns the Engine)
+3. getChild(name: str) (Returns the child with the name)
+4. getChildren() (Returns the children list)
+
+> Objects like Camera, SoundService, UserInputService, EngineEventService, EngineRenderService, Assets, Object do not have children. Thus they don't have any children-related methods or attributes.
+
 ***
 
 <span id="object-types"></span>
@@ -33,3 +41,9 @@ Attributes:
 4. collisionGroup (An integer deciding which collision group the Entity is in)
 5. size (The scaling values list containing x and y scale)
 6. rotation (A number deciding which side Entity is facing)
+
+Methods:
+1. isColliding(objName, parent='Workspace')
+
+---
+Written January 29, 2022 by PyxleDev0
