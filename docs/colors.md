@@ -1,11 +1,16 @@
 
 # CORP Engine Colors
 
+| Table of Contents | 
+| ----------- |
+| [1.1 - List of Colors](#colors-list) |
+
+
 
 * Colors in CORP are constants in the `main.Colors` module, thus you can access each color with `corpengine1.Colors.{COLOR}.`
 * Each color is defined as a **tuple** following the pattern `(RED, GREEN, BLUE)`, having a length of **3**, each item being an integer between 0 and 255 (both inclusive) representing the intesity of the corresponding color.
 
-
+<span id="colors-list"></span>
 ## 1.1 - List of Colors
 ### Black - White Tones
         white
