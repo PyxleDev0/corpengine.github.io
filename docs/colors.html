@@ -11,22 +11,48 @@
 
 <div id="right">
   <h1>Colors Documentation</h1>
+
+  <table>
+    Table of Contents:<br>
+    <ul>
+      <li><a href="#getting-colors">1.1 - Getting Colors</a></li>
+      <li><a href="#colors-list">1.2 - Colors List</a></li>
+      <li><a href="#color-methods">1.3 - Color Methods</a></li>
+    </ul>
+  </table>
+
+  <span id="getting-colors"></span>
+  <h2>1.1 - Getting Colors</h2>
   <p>
     <ul>
       <li>Colors in CORP Engine are constants in the <code>main.colors</code> module, thus you can access each color with <code>corpengine1.colors.COLOR_NAME</code>.</li>
       <li>Each color is defined as a <strong>tuple</strong> following the pattern <code>(R, G, B)</code>, having a length of <strong>3</strong>, each item being an integer between 0 and 255 (both inclusive) representing the intesity of the corresponding color.</li>
     </ul>
   </p>
-  An example code about getting colors:
-  <code>python
-  ss
-  </code>
   <br>
-  <table>
-    Table of Contents:<br>
-    <ul>
-      <li><a href="#colors-list">1.1 - Colors List</a></li>
-      <li><a href="color-methods">1.2 - Color Methods</a></li>
-    </ul>
-  </table>
+  <p>
+    An example code about getting colors:
+    <script src="https://gist.github.com/PyxleDev0/f04dc217756d5d35203eb9cad9a23646.js"></script>
+  </p>
+
+  <h2>1.2 - Colors List </h2>
+  <p>(the color previews are made slightly transparent to increase visibility.)</p>
+  <h4>Black & White Tones:</h4>
+  <ul>
+    <li style="background-color:rgba(255, 255, 255, 0.5)">WHITE</li>
+    <li style="background-color:rgba(224, 224, 224, 0.5)">CORPWHITE</li>
+    <li style="background-color:rgba(211, 211, 211, 0.5)">LIGHTGRAY</li>
+    <li style="background-color:rgba(192, 192, 192, 0.5)">SILVER</li>
+    <li style="background-color:rgba(128, 128, 128, 0.5)">GRAY</li>
+    <li style="background-color:rgba(64, 64, 64, 0.5)">DARKGRAY</li>
+    <li style="background-color:rgba(0, 0, 0, 0.5)">BLACK</li>
+  </ul>
+
+  <h4>Single Toned Colors:</h4>
+  <ul>
+    <li style="background-color:rgba(255, 0, 0, 0.5)">RED</li>
+    <li style="background-color:rgba(0, 255, 0, 0.5)">LIME</li>
+    <li style="background-color:rgba(0, 0, 255)">BLUE</li>
+  </ul>
+  <br>
 </div>
