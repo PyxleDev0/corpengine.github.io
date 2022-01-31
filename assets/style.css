@@ -9,7 +9,6 @@
 #left{
   position: static;
   float: none;
-  padding-left: 150px; /*150px*/
 }
 
 #left > h1{
