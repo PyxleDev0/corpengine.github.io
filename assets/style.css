@@ -8,7 +8,7 @@
 }
 #left{
   position: fixed;
-  float: left;
+  float: none;
   padding-left: 150px; /*150px*/
 }
 
